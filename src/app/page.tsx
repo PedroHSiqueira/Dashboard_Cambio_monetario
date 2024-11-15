@@ -43,7 +43,7 @@ export default function Home() {
 
   const cardAmericanas = americanas.map((americana) => {
     return (
-      <Card>
+      <Card key={americana.code}>
         <CardHeader>
           <div className="flex items-center justify-center ">
             <CardTitle className="text-lg sm:text-xl text-gray-800 select-none">1 {americana.name}</CardTitle>
@@ -59,7 +59,7 @@ export default function Home() {
 
   const cardEuropeias = europeias.map((europeia) => {
     return (
-      <Card>
+      <Card key={europeia.code}>
         <CardHeader>
           <div className="flex items-center justify-center ">
             <CardTitle className="text-lg sm:text-xl text-gray-800 select-none">1 {europeia.name}</CardTitle>
@@ -75,7 +75,7 @@ export default function Home() {
 
   const cardAsiaticas = asiaticas.map((asiatica) => {
     return (
-      <Card>
+      <Card key={asiatica.code}>
         <CardHeader>
           <div className="flex items-center justify-center ">
             <CardTitle className="text-lg sm:text-xl text-gray-800 select-none">1 {asiatica.name}</CardTitle>

@@ -22,7 +22,7 @@ export default function Home() {
 
   const cardMoedas = moedas.map((moeda) => {
     return (
-      <Card>
+      <Card key={moeda.code}>
         <CardHeader>
           <div className="flex items-center justify-center ">
             <CardTitle className="text-lg sm:text-xl text-gray-800 select-none">1 {moeda.name}</CardTitle>

@@ -3,7 +3,7 @@ import { MoedasI } from "@/utils/types/moeda";
 import { useEffect, useState } from "react";
 import Banner from "@/components/banner";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { DollarSign} from "lucide-react";
+import { DollarSign } from "lucide-react";
 import ChartOverview from "@/components/chart";
 import Variation from "@/components/variations";
 
@@ -22,7 +22,7 @@ export default function Home() {
 
   const cardMoedas = moedas.map((moeda) => {
     return (
-      <Card>
+      <Card key={moeda.code}>
         <CardHeader>
           <div className="flex items-center justify-center ">
             <CardTitle className="text-lg sm:text-xl text-gray-800 select-none">1 {moeda.name}</CardTitle>
